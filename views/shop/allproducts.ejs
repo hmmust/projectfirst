@@ -1,0 +1,13 @@
+<%- include("../partials/header.ejs",{title:title}) %>
+<%- include("../partials/nav.ejs") %>
+        <h1>All Products</h1>
+        <table style="border: 1px solid black;">
+            <thead><tr><th>Product Name</th></tr>
+            </thead>
+            <tbody>
+                <% for(p of products) {%>
+                    <tr><td><%= p %></td></tr>
+                <%}%>
+    </tbody>
+    </table>
+    <%- include("../partials/footer.ejs") %>

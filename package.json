@@ -1,0 +1,10 @@
+{
+  "name": "projectfirst",
+  "version": "1.0.0",
+  "description": "Hello",
+  "scripts": {
+    "start": "nodemon second.js"
+  },
+  "author": "Hossam Mustafa",
+  "license": "ISC"
+}
