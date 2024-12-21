@@ -14,5 +14,18 @@
     "mongodb": "^6.12.0",
     "mongoose": "^8.9.2",
     "nodemon": "^3.1.9"
-  }
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmmust/projectfirst.git"
+  },
+  "keywords": [
+    "shop"
+  ],
+  "bugs": {
+    "url": "https://github.com/hmmust/projectfirst/issues"
+  },
+  "homepage": "https://github.com/hmmust/projectfirst#readme"
 }
