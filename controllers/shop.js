@@ -1,24 +1,12 @@
-const Shopproducts = ["Tea","Bread","Water"];
-
-const getIndex = (req,res)=>{
-    res.render("shop/index.ejs",{title:"Shop Main Page"});
+exports.getIndex = (req,res,next)=> {
+    res.render("shop/index.ejs",{title:"Main Page"});
 };
-
-
-const getProducts = (req,res)=>{
-    res.render("shop/allproducts",{title:"All Products",products:Shopproducts});
+exports.getProducts = (req,res,next)=> {
+    res.render("shop/allproducts.ejs",{title:"Main Page",products:[]});
 };
-
-const getProduct = (req,res)=>{
-     res.render("shop/product",{title:"Add Product"});
-};
-
-const postProduct = (req,res)=>{
-    Shopproducts.push(req.body.name); 
-    res.redirect("/shop/products");
-};
-
-exports.getIndex=getIndex;
-exports.getProduct=getProduct;
-exports.postProduct=postProduct;
-exports.getProducts= getProducts;
+exports.getProduct = (req,res,next)=> {};
+exports.postCart= (req,res,next)=> {};
+exports.getCart= (req,res,next)=> {};
+exports.postCartDeleteItem= (req,res,next)=> {};
+exports.postOrder= (req,res,next)=> {};
+exports.getOrders= (req,res,next)=> {};
